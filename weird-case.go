@@ -11,15 +11,16 @@ func toWeirdCase(str string) string {
 	weirdCase := ""
 	evenCounter := 0
 	for i := 0; i < len(str); i++ {
-		evenCounter++
-		if string(str[i]) == " " {
-			evenCounter--
-		}
-		if i%2 == 0 {
+		if evenCounter%2 == 0 {
 			weirdCase += strings.ToUpper(string(str[i]))
 		} else {
 			weirdCase += strings.ToLower(string(str[i]))
 		}
+		if string(str[i]) == " " {
+			evenCounter = 0
+			continue
+		}
+		evenCounter++
 	}
 	return weirdCase
 }
