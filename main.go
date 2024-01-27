@@ -3,9 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(RomanToInt("VII"))
-	fmt.Println(RomanToInt("MMXX"))
-	fmt.Println(RomanToInt("MMXXVI"))
+	fmt.Println("a"[0])
+	fmt.Println("z"[0])
+	fmt.Println("A"[0])
+	fmt.Println("Z"[0])
 }
 
 /*
