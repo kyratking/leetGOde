@@ -3,10 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("a"[0])
-	fmt.Println("z"[0])
-	fmt.Println("A"[0])
-	fmt.Println("Z"[0])
+	fmt.Println(theMaximumAchievableX(4, 1))
+	fmt.Println(theMaximumAchievableX(3, 2))
+	fmt.Println(theMaximumAchievableX(5, 4))
+	fmt.Println(theMaximumAchievableX(7, 3))
 }
 
 /*
